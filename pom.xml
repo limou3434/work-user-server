@@ -31,11 +31,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <java.version>17</java.version>
         <springboot.version>3.2.3</springboot.version>
         <dubbo.version>3.3.2</dubbo.version>
         <workuserserver.version>1.0.0</workuserserver.version>
+        <lombok.version>1.18.24</lombok.version>
         <hutool.version>5.8.8</hutool.version>
+        <workuserserver.version>1.0.0</workuserserver.version>
         <mysql.version>8.3.0</mysql.version>
         <mybatisplus.version>3.5.11</mybatisplus.version>
         <satoken.version>1.43.0</satoken.version>
@@ -47,6 +51,7 @@
 
             <!-- Spring: https://spring.io/ -->
             <dependency>
+                <!-- Spring Boot 物料清单 -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${springboot.version}</version>
@@ -56,6 +61,7 @@
 
             <!-- Dubbo: https://cn.dubbo.apache.org/zh-cn/overview/mannual/java-sdk/quick-start/starter/ -->
             <dependency>
+                <!-- Dubbo 物料清单 -->
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-bom</artifactId>
                 <version>${dubbo.version}</version>
@@ -65,16 +71,25 @@
 
             <!-- Work User Server: https://www.github.com/limou3434 -->
             <dependency>
-                <!-- API 模块 -->
+                <!-- API 子模块 -->
                 <groupId>cn.com.edtechhub</groupId>
                 <artifactId>work-user-api</artifactId>
                 <version>${workuserserver.version}</version>
             </dependency>
             <dependency>
-                <!-- SERVICE 模块 -->
+                <!-- SERVICE 子模块 -->
                 <groupId>cn.com.edtechhub</groupId>
                 <artifactId>work-user-service</artifactId>
                 <version>${workuserserver.version}</version>
+            </dependency>
+
+            <!-- Lombok: https://projectlombok.org/ -->
+            <dependency>
+                <!-- Lombok 减少 Java 代码中的样板代码, 自动生成 getter/setter、toString()、equals() -->
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <optional>true</optional>
             </dependency>
 
             <!-- Hutool: https://doc.hutool.cn/pages/index/ -->
@@ -83,6 +98,14 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <!-- Work General Module3: https://github.com/limou3434 -->
+            <dependency>
+                <!-- 提供了一些常用的通用开发工具 -->
+                <groupId>cn.com.edtechhub</groupId>
+                <artifactId>work-general-module3</artifactId>
+                <version>${workuserserver.version}</version>
             </dependency>
 
             <!-- MySQL: https://www.mysql.com/ -->

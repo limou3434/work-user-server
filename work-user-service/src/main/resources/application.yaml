@@ -28,3 +28,7 @@ dubbo:
   metadata-report:
     parameters:
       cacheDir: ./cache
+
+logging:
+  level:
+    cn.com.edtechhub.workuserserver: DEBUG
