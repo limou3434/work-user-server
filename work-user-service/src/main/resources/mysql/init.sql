@@ -4,9 +4,9 @@ CREATE DATABASE `work_user_server` CHARACTER SET `utf8mb4` COLLATE = `utf8mb4_un
 USE `work_user_server`;
 
 -- 项目用户
-DROP USER IF EXISTS 'wus'@'%';
-CREATE USER 'wus'@'%' IDENTIFIED BY 'Qwe54188_';
-GRANT ALL PRIVILEGES ON `work_user_server`.* TO 'wus'@'%';
+DROP USER IF EXISTS 'limou'@'%';
+CREATE USER 'limou'@'%' IDENTIFIED BY 'Qwe54188_';
+GRANT ALL PRIVILEGES ON `work_user_server`.* TO 'limou'@'%';
 FLUSH PRIVILEGES;
 
 -- 项目数表

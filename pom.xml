@@ -49,7 +49,7 @@
     <dependencyManagement>
         <dependencies>
 
-            <!-- Spring: https://spring.io/ -->
+            <!-- Spring Boot: https://spring.io/projects/spring-boot -->
             <dependency>
                 <!-- Spring Boot 物料清单 -->
                 <groupId>org.springframework.boot</groupId>

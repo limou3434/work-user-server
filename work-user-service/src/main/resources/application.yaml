@@ -3,8 +3,8 @@ spring:
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:develop} # 默认启动开发环境
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/work_collaborative_images
-    username: wci
+    url: jdbc:mysql://127.0.0.1:3306/work_user_server
+    username: root
     password: Qwe54188_
 
 server:
@@ -31,4 +31,13 @@ dubbo:
 
 logging:
   level:
-    cn.com.edtechhub.workuserserver: DEBUG
+    cn.com.edtechhub: DEBUG
+
+# 配置 MyBatisPlus
+mybatis-plus:
+  ## 配置加密盐值
+  salt: edtechhub
+  ## 下划线转驼峰
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

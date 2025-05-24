@@ -1,4 +1,4 @@
-package cn.com.edtechhub.workuserserver.dto;
+package cn.com.edtechhub.workuserserver.model.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
